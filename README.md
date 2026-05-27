@@ -17,7 +17,7 @@
 
 You have a folder of papers. You want to know what the papers are about, which research areas are mainstream, which methods appear frequently, what gaps are underexplored, and what publishable ideas may be worth trying.
 
-One Summary to Rule Them All is built for that workflow. It separates deterministic file processing from semantic research analysis:
+Helping you break through in your research is built for that workflow. It separates deterministic file processing from semantic research analysis:
 
 - **Python** scans local papers, extracts text, prepares batches, validates JSON, builds the report, and serves the dashboard.
 - **Codex** reads extracted paper text, analyzes each paper, synthesizes cross-paper trends, and proposes research ideas.
