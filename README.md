@@ -1,4 +1,4 @@
-<h1 align="center">One Summary to Rule Them All</h1>
+<h1 align="center">Helping you break through in your research</h1>
 
 <p align="center">
   <strong>From a folder of papers to a literature map, research gaps, publishable ideas, and an interactive dashboard.</strong>
