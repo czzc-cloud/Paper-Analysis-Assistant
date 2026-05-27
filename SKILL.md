@@ -3,7 +3,7 @@ name: paper-research-assistant
 description: Use host-model analysis to read a local folder of research papers, extract innovations and methods, build a literature knowledge graph, discover research gaps, and propose method innovation ideas.
 ---
 
-# Paper Research Assistant
+# One Summary to Rule Them All
 
 Use this skill when the user asks to analyze a local research-paper folder, literature corpus, PDF collection, research direction, or method landscape.
 

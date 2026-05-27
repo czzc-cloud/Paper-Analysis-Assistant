@@ -1,4 +1,4 @@
-# Paper Research Assistant Workflow
+# One Summary to Rule Them All Workflow
 
 This project is designed as an Understand Anything style skill:
 
@@ -42,6 +42,39 @@ Final user-facing deliverables:
 - local dashboard viewer
 
 The dashboard reads `literature-graph.json`, `analysis.json`, and `research-map-report.md` to present the final research map, paper summaries, gaps, innovation ideas, and graph exploration view.
+
+## Execution Modes
+
+The project supports two distinct modes.
+
+### Codex Skill Mode
+
+This is the intended assistant workflow. The user can ask Codex:
+
+```text
+Use this skill to study all papers under D:\papers, generate the literature analysis, and open the dashboard.
+```
+
+Codex then orchestrates the full chain:
+
+```text
+prepare -> batch paper analysis -> corpus synthesis -> finalize -> dashboard
+```
+
+In this mode, Codex reads `analysis-batches.json`, analyzes the pending `paper-text/*.json` files, writes `paper-analysis-<N>.json` and `corpus-analysis.json`, runs `finalize`, starts the dashboard, and opens the local page.
+
+### Manual CLI Mode
+
+This mode is for step-by-step control and debugging. The Python CLI can prepare, finalize, and serve the dashboard, but it does not perform final semantic research analysis by itself.
+
+Manual users must provide the semantic JSON files before finalization:
+
+```text
+intermediate/paper-analysis-<N>.json
+intermediate/corpus-analysis.json
+```
+
+The deterministic local `analyze` command is only a smoke test and should not be treated as the final literature-review workflow.
 
 ## Phase 1: Prepare
 
