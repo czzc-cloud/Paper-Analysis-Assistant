@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.idea/
+.venv/
+venv/
+.env
+.paper-research-assistant/
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+dist/
+build/
+*.egg-info/

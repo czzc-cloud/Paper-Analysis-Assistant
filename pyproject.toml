@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-research-assistant"
+version = "0.1.0"
+description = "Python research literature assistant for local paper folders"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "paper-research-assistant" }]
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pymupdf>=1.24.0"]
+pdf-fallback = ["pypdf>=4.0.0"]
+
+[project.scripts]
+paper-research-assistant = "paper_research_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["paper_research_assistant*"]
